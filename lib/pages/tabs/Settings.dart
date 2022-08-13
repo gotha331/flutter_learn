@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({ Key? key }) : super(key: key);
+  const SettingsPage({Key? key}) : super(key: key);
 
   @override
   State<SettingsPage> createState() => _SettingsPageState();
@@ -10,8 +10,21 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("我是设置页面"),
+    return Column(
+      children: [
+        ElevatedButton(
+          child: Text("login"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/login');
+          },
+        ),
+        ElevatedButton(
+          child: Text("跳转到注册页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/register1');
+          },
+        ),
+      ],
     );
   }
 }
