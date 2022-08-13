@@ -55,6 +55,81 @@ class _TabsState extends State<Tabs> {
           ),
         ],
       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Row(
+              children: const [
+                Expanded(
+                  // child: DrawerHeader(
+                  //   child: Text(
+                  //     "你好,flutter!",
+                  //     style: TextStyle(color: Colors.pink),
+                  //   ),
+                  //   decoration: BoxDecoration(
+                  //     // color: Colors.yellow,
+                  //     image: DecorationImage(
+                  //       image: NetworkImage(
+                  //           "https://www.itying.com/images/flutter/2.png"),
+                  //       fit: BoxFit.cover,
+                  //     ),
+                  //   ),
+                  // ),
+
+                  child: UserAccountsDrawerHeader(
+                    accountName: Text("xxx"),
+                    accountEmail: Text("xxx@gmail.com"),
+                    currentAccountPicture: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          "https://www.itying.com/images/flutter/2.png"),
+                    ),
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: NetworkImage(
+                            "https://www.itying.com/images/flutter/1.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            ListTile(
+              leading: CircleAvatar(
+                child: Icon(Icons.home),
+              ),
+              title: Text("我的空间"),
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                child: Icon(Icons.people),
+              ),
+              title: Text("用户中心"),
+              onTap: () {
+                // Navigator.pop(context); // 隐藏侧边栏
+                // Navigator.pushNamed(context, '/user');
+                Navigator.popAndPushNamed(context, '/user');
+              },
+            ),
+            Divider(),
+            ListTile(
+              leading: CircleAvatar(
+                child: Icon(Icons.settings),
+              ),
+              title: Text("设置中心"),
+            ),
+          ],
+        ),
+      ),
+      endDrawer: Drawer(
+        child: Column(
+          children: const [
+            SizedBox(height: 40),
+            Text("你好，flutter!"),
+          ],
+        ),
+      ),
     );
   }
 }
