@@ -66,6 +66,20 @@ class _HomepageState extends State<Homepage> {
                 arguments: SearchArguments(id: 123, name: "暴富"));
           },
         ),
+        SizedBox(height: 20),
+        ElevatedButton(
+          child: Text("跳转到appBar"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/appBarDemo');
+          },
+        ),
+        SizedBox(height: 20),
+        ElevatedButton(
+          child: Text("跳转到tabBarController"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/tabBarController');
+          },
+        ),
       ],
     );
   }

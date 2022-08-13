@@ -5,6 +5,8 @@ import "../pages/user/Login.dart";
 import "../pages/user/RegisterFirst.dart";
 import "../pages/user/RegisterSecond.dart";
 import "../pages/user/RegisterThird.dart";
+import "../pages/AppBarDemo.dart";
+import "../pages/TabBarController.dart";
 
 final routes = {
   '/cart': (context) => CartPage(),
@@ -14,4 +16,6 @@ final routes = {
   '/register1': (context) => RegisterFirstPage(),
   '/register2': (context) => RegisterSecondPage(),
   '/register3': (context) => RegisterThirdPage(),
+  '/appBarDemo': (context) => AppBarDemoPage(),
+  '/tabBarController': (context) => TabBarControllerPage(),
 };
