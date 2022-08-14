@@ -14,6 +14,7 @@ import "../pages/FormDemo.dart";
 import "../pages/DatePicker.dart";
 import "../pages/DateTimePicker.dart";
 import "../pages/Swiper.dart";
+import "../pages/Dialog.dart";
 
 final routes = {
   '/cart': (context) => CartPage(),
@@ -32,4 +33,5 @@ final routes = {
   '/datePicker': (context) => DatePickerDemo(),
   '/dateTimePicker': (context) => DateTimePickerPage(),
   '/swiperDemo': (context) => SwiperDemoPage(),
+  '/dialogDemo': (context) => DialogDemoPage(),
 };

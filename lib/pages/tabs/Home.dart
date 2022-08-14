@@ -123,6 +123,13 @@ class _HomepageState extends State<Homepage> {
               Navigator.pushNamed(context, '/swiperDemo');
             },
           ),
+          SizedBox(height: 20),
+          ElevatedButton(
+            child: Text("跳转到dialogDemo"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/dialogDemo');
+            },
+          ),
         ],
       ),
     );
