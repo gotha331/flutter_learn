@@ -116,6 +116,13 @@ class _HomepageState extends State<Homepage> {
               Navigator.pushNamed(context, '/dateTimePicker');
             },
           ),
+          SizedBox(height: 20),
+          ElevatedButton(
+            child: Text("跳转到swiperDemo"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/swiperDemo');
+            },
+          ),
         ],
       ),
     );
