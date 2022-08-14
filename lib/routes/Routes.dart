@@ -8,8 +8,9 @@ import "../pages/user/RegisterThird.dart";
 import "../pages/user/User.dart";
 import "../pages/AppBarDemo.dart";
 import "../pages/TabBarController.dart";
+import "../pages/Button.dart";
 
-final routes = {
+final Map<String, Function> routes = {
   '/cart': (context) => CartPage(),
   '/form': (context) => FormPage(),
   '/search': (context) => SearchPage(),
@@ -20,4 +21,5 @@ final routes = {
   '/user': (context) => UserPage(),
   '/appBarDemo': (context) => AppBarDemoPage(),
   '/tabBarController': (context) => TabBarControllerPage(),
+  '/buttonDemo': (context) => ButtonDemoPage(),
 };
