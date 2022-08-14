@@ -11,6 +11,8 @@ import "../pages/TabBarController.dart";
 import "../pages/Button.dart";
 import "../pages/FormTest.dart";
 import "../pages/FormDemo.dart";
+import "../pages/DatePicker.dart";
+import "../pages/DateTimePicker.dart";
 
 final routes = {
   '/cart': (context) => CartPage(),
@@ -26,4 +28,6 @@ final routes = {
   '/buttonDemo': (context) => ButtonDemoPage(),
   '/formTest': (context) => FormTestPage(),
   '/formDemo': (context) => FormDemoPage(),
+  '/datePicker': (context) => DatePickerDemo(),
+  '/dateTimePicker': (context) => DateTimePickerPage(),
 };
