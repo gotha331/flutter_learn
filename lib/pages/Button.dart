@@ -9,6 +9,13 @@ class ButtonDemoPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("button演示页面"),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add, color: Colors.red, size: 40),
+        backgroundColor: Colors.yellow,
+        // foregroundColor:Colors.grey,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

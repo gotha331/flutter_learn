@@ -10,7 +10,7 @@ import "../pages/AppBarDemo.dart";
 import "../pages/TabBarController.dart";
 import "../pages/Button.dart";
 
-final Map<String, Function> routes = {
+final routes = {
   '/cart': (context) => CartPage(),
   '/form': (context) => FormPage(),
   '/search': (context) => SearchPage(),

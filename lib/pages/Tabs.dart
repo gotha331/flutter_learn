@@ -29,6 +29,26 @@ class _TabsState extends State<Tabs> {
       appBar: AppBar(
         title: Text("Flutter demo"),
       ),
+      floatingActionButton: Container(
+        height: 80,
+        width: 80,
+        padding: EdgeInsets.all(8),
+        margin: EdgeInsets.only(top: 10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.white,
+        ),
+        child: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              _currentIndex = 1;
+            });
+          },
+          child: Icon(Icons.add, size: 36),
+          backgroundColor: _currentIndex == 1 ? Colors.red : Colors.yellow,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: _pageList[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
