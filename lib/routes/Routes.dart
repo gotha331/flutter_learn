@@ -9,6 +9,8 @@ import "../pages/user/User.dart";
 import "../pages/AppBarDemo.dart";
 import "../pages/TabBarController.dart";
 import "../pages/Button.dart";
+import "../pages/FormTest.dart";
+import "../pages/FormDemo.dart";
 
 final routes = {
   '/cart': (context) => CartPage(),
@@ -22,4 +24,6 @@ final routes = {
   '/appBarDemo': (context) => AppBarDemoPage(),
   '/tabBarController': (context) => TabBarControllerPage(),
   '/buttonDemo': (context) => ButtonDemoPage(),
+  '/formTest': (context) => FormTestPage(),
+  '/formDemo': (context) => FormDemoPage(),
 };

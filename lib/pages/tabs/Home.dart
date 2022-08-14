@@ -87,6 +87,19 @@ class _HomepageState extends State<Homepage> {
             Navigator.pushNamed(context, '/buttonDemo');
           },
         ),
+        SizedBox(height: 20),
+        ElevatedButton(
+          child: Text("跳转到表单练习页面"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/formTest');
+          },
+        ),
+        ElevatedButton(
+          child: Text("跳转到表单demo页面-学员登记系统"),
+          onPressed: () {
+            Navigator.pushNamed(context, '/formDemo');
+          },
+        ),
       ],
     );
   }
