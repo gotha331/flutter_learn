@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "../Search.dart";
 import "../Form.dart";
 import "../Cart.dart";
+import "../../components/MyDialog.dart";
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -128,6 +129,21 @@ class _HomepageState extends State<Homepage> {
             child: Text("跳转到dialogDemo"),
             onPressed: () {
               Navigator.pushNamed(context, '/dialogDemo');
+            },
+          ),
+          SizedBox(height: 20),
+          ElevatedButton(
+            child: Text("显示自定义Dialog"),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return MyDialog(
+                    title: "about us",
+                    content: "大家说个好啊好高科技啊时间啊帅哥叫卡哈嘎几个健康更快更好过",
+                  );
+                },
+              );
             },
           ),
         ],
